@@ -6589,7 +6589,7 @@ __metadata:
     reselect: 4.1.8
     roboto-fontface: 0.10.0
     smalltalk: 2.5.1
-    sqlite3: 5.1.7
+    sqlite3: 5.1.6
     styled-components: 5.3.11
     styled-system: 5.1.5
     taboverride: 4.0.3
@@ -6633,6 +6633,7 @@ __metadata:
     "@types/tar-stream": 3.1.3
     assert-browserify: 2.0.0
     babel-jest: 29.7.0
+    babel-loader: 9.1.3
     babel-plugin-module-resolver: 4.1.0
     buffer: 6.0.3
     constants-browserify: 1.0.0
@@ -6688,11 +6689,11 @@ __metadata:
     react-test-renderer: 18.2.0
     redux: 4.2.1
     rn-fetch-blob: 0.12.0
-    sqlite3: 5.1.7
+    sqlite3: 5.1.6
     stream: 0.0.2
     stream-browserify: 3.0.0
     string-natural-compare: 3.0.1
-    tar-stream: 3.1.6
+    tar-stream: 3.1.7
     timers: 0.1.1
     ts-jest: 29.1.1
     ts-loader: 9.5.1
@@ -6894,7 +6895,7 @@ __metadata:
     server-destroy: 1.0.1
     sharp: 0.33.2
     sprintf-js: 1.1.3
-    sqlite3: 5.1.7
+    sqlite3: 5.1.6
     string-padding: 1.0.2
     string-to-stream: 3.0.1
     tar: 6.2.0
@@ -7081,14 +7082,14 @@ __metadata:
     nodemailer: 6.9.8
     nodemon: 3.0.3
     pg: 8.11.3
-    pm2: 5.3.0
+    pm2: 5.3.1
     pretty-bytes: 5.6.0
     prettycron: 0.10.0
     query-string: 7.1.3
     rate-limiter-flexible: 3.0.6
     raw-body: 2.5.2
     source-map-support: 0.5.21
-    sqlite3: 5.1.7
+    sqlite3: 5.1.6
     stripe: 8.222.0
     typescript: 5.2.2
     uuid: 9.0.1
@@ -7137,7 +7138,7 @@ __metadata:
     sass: 1.69.7
     sharp: 0.33.2
     source-map-support: 0.5.21
-    sqlite3: 5.1.7
+    sqlite3: 5.1.6
     style-to-js: 1.1.10
     typescript: 5.2.2
     uri-template: 2.0.0
@@ -8899,16 +8900,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@pm2/js-api@npm:~0.6.7":
-  version: 0.6.7
-  resolution: "@pm2/js-api@npm:0.6.7"
+"@pm2/js-api@npm:~0.8.0":
+  version: 0.8.0
+  resolution: "@pm2/js-api@npm:0.8.0"
   dependencies:
     async: ^2.6.3
-    axios: ^0.21.0
     debug: ~4.3.1
     eventemitter2: ^6.3.1
+    extrareqp2: ^1.0.0
     ws: ^7.0.0
-  checksum: 43d1e4d06328ad18d8929225a0732fa20701694dea0e3af0ea692239e0adc45ef2f48a794599a8df88bc705d2e428b5b8018deb3709983c91ed0b74a834b2f21
+  checksum: c17b01d2a5efe8db370b21a7a0452e144d14066632d35a423cc025b812630563f195440dea842281cce614ae5dc3509fce33e27f68318aa024d815332d28edbd
   languageName: node
   linkType: hard
 
@@ -13627,15 +13628,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"axios@npm:^0.21.0":
-  version: 0.21.4
-  resolution: "axios@npm:0.21.4"
-  dependencies:
-    follow-redirects: ^1.14.0
-  checksum: 44245f24ac971e7458f3120c92f9d66d1fc695e8b97019139de5b0cc65d9b8104647db01e5f46917728edfc0cfd88eb30fc4c55e6053eef4ace76768ce95ff3c
-  languageName: node
-  linkType: hard
-
 "axios@npm:^0.25.0":
   version: 0.25.0
   resolution: "axios@npm:0.25.0"
@@ -13684,6 +13676,19 @@ __metadata:
   peerDependencies:
     "@babel/core": ^7.8.0
   checksum: ee6f8e0495afee07cac5e4ee167be705c711a8cc8a737e05a587a131fdae2b3c8f9aa55dfd4d9c03009ac2d27f2de63d8ba96d3e8460da4d00e8af19ef9a83f7
+  languageName: node
+  linkType: hard
+
+"babel-loader@npm:9.1.3":
+  version: 9.1.3
+  resolution: "babel-loader@npm:9.1.3"
+  dependencies:
+    find-cache-dir: ^4.0.0
+    schema-utils: ^4.0.0
+  peerDependencies:
+    "@babel/core": ^7.12.0
+    webpack: ">=5"
+  checksum: b168dde5b8cf11206513371a79f86bb3faa7c714e6ec9fffd420876b61f3d7f5f4b976431095ef6a14bc4d324505126deb91045fd41e312ba49f4deaa166fe28
   languageName: node
   linkType: hard
 
@@ -21140,6 +21145,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"extrareqp2@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "extrareqp2@npm:1.0.0"
+  dependencies:
+    follow-redirects: ^1.14.0
+  checksum: 1c64c2669715a8dbb07c88ba81a3aa1dd1fe29a794b27db5bece17994de32d3f21ca686af265f56174a748203b57eebdf8ae22afda05f361fc29420059ed14ae
+  languageName: node
+  linkType: hard
+
 "extsprintf@npm:1.3.0":
   version: 1.3.0
   resolution: "extsprintf@npm:1.3.0"
@@ -24335,6 +24349,28 @@ __metadata:
   languageName: node
   linkType: hard
 
+"husky@patch:husky@npm%3A3.1.0#./.yarn/patches/husky-npm-3.1.0-5cc13e4e34.patch::locator=root%40workspace%3A.":
+  version: 3.1.0
+  resolution: "husky@patch:husky@npm%3A3.1.0#./.yarn/patches/husky-npm-3.1.0-5cc13e4e34.patch::version=3.1.0&hash=d9603f&locator=root%40workspace%3A."
+  dependencies:
+    chalk: ^2.4.2
+    ci-info: ^2.0.0
+    cosmiconfig: ^5.2.1
+    execa: ^1.0.0
+    get-stdin: ^7.0.0
+    opencollective-postinstall: ^2.0.2
+    pkg-dir: ^4.2.0
+    please-upgrade-node: ^3.2.0
+    read-pkg: ^5.2.0
+    run-node: ^1.0.0
+    slash: ^3.0.0
+  bin:
+    husky-run: ./run.js
+    husky-upgrade: ./lib/upgrader/bin.js
+  checksum: b29b08a1e9be6037d0eb3dd875c22ffba1f375532a89e4320d31cb5ea37ffca4b487ef903a8b867ccfb2ece6a1ca87c65bc202d932f92cfb7d6f017c76bb1294
+  languageName: node
+  linkType: hard
+
 "iconv-corefoundation@npm:^1.1.7":
   version: 1.1.7
   resolution: "iconv-corefoundation@npm:1.1.7"
@@ -26958,7 +26994,7 @@ __metadata:
     server-destroy: 1.0.1
     sharp: 0.33.2
     sprintf-js: 1.1.3
-    sqlite3: 5.1.7
+    sqlite3: 5.1.6
     string-padding: 1.0.2
     strip-ansi: 6.0.1
     tcp-port-used: 1.0.2
@@ -31134,21 +31170,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"node-addon-api@npm:^4.3.0":
+"node-addon-api@npm:^4.2.0, node-addon-api@npm:^4.3.0":
   version: 4.3.0
   resolution: "node-addon-api@npm:4.3.0"
   dependencies:
     node-gyp: latest
   checksum: 3de396e23cc209f539c704583e8e99c148850226f6e389a641b92e8967953713228109f919765abc1f4355e801e8f41842f96210b8d61c7dcc10a477002dcf00
-  languageName: node
-  linkType: hard
-
-"node-addon-api@npm:^7.0.0":
-  version: 7.1.0
-  resolution: "node-addon-api@npm:7.1.0"
-  dependencies:
-    node-gyp: latest
-  checksum: 26640c8d2ed7e2059e2ed65ee79e2a195306b3f1fc27ad11448943ba91d37767bd717a9a0453cc97e83a1109194dced8336a55f8650000458ef625c0b8b5e3df
   languageName: node
   linkType: hard
 
@@ -33602,13 +33629,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"pm2@npm:5.3.0":
-  version: 5.3.0
-  resolution: "pm2@npm:5.3.0"
+"pm2@npm:5.3.1":
+  version: 5.3.1
+  resolution: "pm2@npm:5.3.1"
   dependencies:
     "@pm2/agent": ~2.0.0
     "@pm2/io": ~5.0.0
-    "@pm2/js-api": ~0.6.7
+    "@pm2/js-api": ~0.8.0
     "@pm2/pm2-version-check": latest
     async: ~3.2.0
     blessed: 0.1.81
@@ -33644,7 +33671,7 @@ __metadata:
     pm2-dev: bin/pm2-dev
     pm2-docker: bin/pm2-docker
     pm2-runtime: bin/pm2-runtime
-  checksum: ca1a655ab11b8aa8f7c10098578e7f0ed508fb19fae02694c5478f4167a75cb150eb2c305d734b7420696b70193bb765ffbbca498d2ce427f85ae9d25ef19842
+  checksum: 7d82fd70393432abb34218fb82a2ae31e499db13259da6746a371fbf242758c3859a309fd93c836a4cb318721315a95e69126cc16a1843a2f5df931581c47d0e
   languageName: node
   linkType: hard
 
@@ -34229,7 +34256,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prebuild-install@npm:^7.0.1, prebuild-install@npm:^7.1.1":
+"prebuild-install@npm:^7.0.1":
   version: 7.1.1
   resolution: "prebuild-install@npm:7.1.1"
   dependencies:
@@ -38958,14 +38985,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"sqlite3@npm:5.1.7":
-  version: 5.1.7
-  resolution: "sqlite3@npm:5.1.7"
+"sqlite3@npm:5.1.6":
+  version: 5.1.6
+  resolution: "sqlite3@npm:5.1.6"
   dependencies:
-    bindings: ^1.5.0
-    node-addon-api: ^7.0.0
+    "@mapbox/node-pre-gyp": ^1.0.0
+    node-addon-api: ^4.2.0
     node-gyp: 8.x
-    prebuild-install: ^7.1.1
     tar: ^6.1.11
   peerDependencies:
     node-gyp: 8.x
@@ -38975,7 +39001,7 @@ __metadata:
   peerDependenciesMeta:
     node-gyp:
       optional: true
-  checksum: 37e387b74e34aea3d0fc5cea76e14de3139e4bdbf6574ff6ca876c3b5e36e859b278e99922c179c14337cb0d487d8da8dbbaaf7d63fbab5928dc134a9d5db262
+  checksum: ea640628843e37a63dfb4bd2c8429dbd7aab845c1a8204574dca3aac61486ab65bc0abfd99b48f1cead1f783171c6111c0cc4115335d5b95bb0b4eb44db162d5
   languageName: node
   linkType: hard
 
@@ -40207,14 +40233,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tar-stream@npm:3.1.6":
-  version: 3.1.6
-  resolution: "tar-stream@npm:3.1.6"
+"tar-stream@npm:3.1.7":
+  version: 3.1.7
+  resolution: "tar-stream@npm:3.1.7"
   dependencies:
     b4a: ^1.6.4
     fast-fifo: ^1.2.0
     streamx: ^2.15.0
-  checksum: f3627f918581976e954ff03cb8d370551053796b82564f8c7ca8fac84c48e4d042026d0854fc222171a34ff9c682b72fae91be9c9b0a112d4c54f9e4f443e9c5
+  checksum: 6393a6c19082b17b8dcc8e7fd349352bb29b4b8bfe1075912b91b01743ba6bb4298f5ff0b499a3bbaf82121830e96a1a59d4f21a43c0df339e54b01789cb8cc6
   languageName: node
   linkType: hard
 

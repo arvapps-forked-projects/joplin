@@ -334,9 +334,9 @@ export default class SearchEngine {
 
 	private fieldNamesFromOffsets_(offsets: any[]) {
 		const notesNormalizedFieldNames = this.db().tableFieldNames('notes_normalized');
-		const occurenceCount = Math.floor(offsets.length / 4);
+		const occurrenceCount = Math.floor(offsets.length / 4);
 		const output: string[] = [];
-		for (let i = 0; i < occurenceCount; i++) {
+		for (let i = 0; i < occurrenceCount; i++) {
 			const colIndex = offsets[i * 4];
 			const fieldName = notesNormalizedFieldNames[colIndex];
 			if (!output.includes(fieldName)) output.push(fieldName);
@@ -777,18 +777,29 @@ export default class SearchEngine {
 				if (!queryHasFilters) {
 					const toSearch = parsedQuery.allTerms.map(t => t.value).join(' ');
 
-					let itemRows = await this.db().selectAll<ProcessResultsRow>(`
-						SELECT
-							id,
-							title,
-							user_updated_time,
-							offsets(items_fts) AS offsets,
-							matchinfo(items_fts, 'pcnalx') AS matchinfo,
-							item_id,
-							item_type
-						FROM items_fts
-						WHERE title MATCH ? OR body MATCH ?
-					`, [toSearch, toSearch]);
+					let itemRows: ProcessResultsRow[] = [];
+
+					try {
+						itemRows = await this.db().selectAll<ProcessResultsRow>(`
+							SELECT
+								id,
+								title,
+								user_updated_time,
+								offsets(items_fts) AS offsets,
+								matchinfo(items_fts, 'pcnalx') AS matchinfo,
+								item_id,
+								item_type
+							FROM items_fts
+							WHERE title MATCH ? OR body MATCH ?
+						`, [toSearch, toSearch]);
+					} catch (error) {
+						// Android <= 25 doesn't support the following syntax:
+						//    WHERE title MATCH ? OR body MATCH ?
+						// Thus, we skip resource search on these devices.
+						if (!error.message?.includes?.('unable to use function MATCH in the requested context')) {
+							throw error;
+						}
+					}
 
 					const resourcesToNotes = await NoteResource.associatedResourceNotes(itemRows.map(r => r.item_id), { fields: ['note_id', 'parent_id'] });
 
