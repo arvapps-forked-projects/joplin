@@ -65,6 +65,9 @@
 	"%s is not optimised for synchronising many small files so your initial synchronisation will be slow.": [
 		""
 	],
+	"%s tab opened": [
+		""
+	],
 	"%s: %d": [
 		"%s: %d"
 	],
@@ -137,6 +140,9 @@
 	"A5": [
 		"A5"
 	],
+	"About": [
+		""
+	],
 	"About Joplin": [
 		"O Joplinu"
 	],
@@ -151,6 +157,9 @@
 	],
 	"Accept": [
 		"Přijmout"
+	],
+	"Accepted shares": [
+		""
 	],
 	"Access denied: Please check your username and password": [
 		""
@@ -206,11 +215,17 @@
 	"All data, including notes, notebooks and tags will be permanently deleted.": [
 		"Všechna data včetně poznámek, zápisníků a značek budou trvale odstraněna."
 	],
+	"All item sync failures have been marked as \"ignored\".": [
+		""
+	],
 	"All notes": [
 		"Všechny poznámky"
 	],
 	"All potential ports are in use - please report the issue at %s": [
 		"Všechny dostupné porty jsou používané - nahlaste prosím tento problém na %s"
+	],
+	"Allows debugging mobile plugins. See %s for details.": [
+		""
 	],
 	"Also displays unset and hidden config variables.": [
 		"Zobrazí i nenastavené a schované konfigurační proměnné."
@@ -220,6 +235,9 @@
 	],
 	"Always": [
 		"Vždy"
+	],
+	"Always open %s files without asking.": [
+		""
 	],
 	"Ambiguous notebook \"%s\". Please use notebook id instead - press \"ti\" to see the short notebook id or use $b for current selected notebook": [
 		"Nejednoznačný zápisník \"%s\". Místo toho prosím použijte id zápisníku - stiskněte \"ti\" pro zobrazení krátkého id zápisníku nebo použijte $b pro aktuální vybraný zápisník."
@@ -311,6 +329,9 @@
 	"Automatically check for updates": [
 		"Automatická kontrola aktualizací"
 	],
+	"Automatically delete notes in the trash after a number of days": [
+		""
+	],
 	"Automatically switch theme to match system theme": [
 		"Automaticky přepnout téma vzhledu podle nastavení systému"
 	],
@@ -337,6 +358,9 @@
 	],
 	"Bulleted List": [
 		"Seznam s odrážkami"
+	],
+	"by %s": [
+		""
 	],
 	"Can Share": [
 		"Může se sdílet"
@@ -503,8 +527,14 @@
 	"Completed decryption.": [
 		"Dešifrování dokončeno."
 	],
+	"Completed with warnings:\n%s": [
+		""
+	],
 	"Completed: %s (%s)": [
 		"Dokončeno: %s (%s)"
+	],
+	"completion date": [
+		""
 	],
 	"Compress old changes": [
 		"Komprese starých změn"
@@ -685,9 +715,6 @@
 	"Dashboard": [
 		"Panel"
 	],
-	"Database v%s": [
-		"Databáze v%s"
-	],
 	"Date": [
 		"Datum"
 	],
@@ -733,18 +760,6 @@
 	"Delete local data and re-download from sync target": [
 		"Smazat místní data a stáhnout je z cíle synchronizace"
 	],
-	"Delete note \"%s\"?": [
-		"Smazat poznámku \"%s\"?"
-	],
-	"Delete note?": [
-		"Smazat poznámku?"
-	],
-	"Delete notebook \"%s\"?\n\nAll notes and sub-notebooks within this notebook will also be deleted.": [
-		"Smazat zápisník \"%s\"?\n\nBudou smazány i všechny poznámky a pod-zápisníky v tomto zápisníku."
-	],
-	"Delete notebook? All notes and sub-notebooks within this notebook will also be deleted.": [
-		"Smazat zápisník? Budou smazány i všechny poznámky a pod-zápisníky v něm obsažené."
-	],
 	"Delete plugin \"%s\"?": [
 		"Smazat rozšíření \"%s\"?"
 	],
@@ -757,9 +772,6 @@
 	"Delete the Inbox notebook?\n\nIf you delete the inbox notebook, any email that's recently been sent to it may be lost.": [
 		""
 	],
-	"Delete these %d notes?": [
-		"Smazat tyto \"%d\" poznámky?"
-	],
 	"Delete this invitation? The recipient will no longer have access to this shared notebook.": [
 		"Opravdu chcete smazat tuto pozvánku? Příjemce už nebude mít přístup k tomuto sdílenému zápisníku."
 	],
@@ -771,6 +783,9 @@
 	],
 	"Deleted remote items: %d.": [
 		"Položky smazané na vzdáleném úložišti: %d."
+	],
+	"Deletes notes permanently, skipping the trash.": [
+		""
 	],
 	"Deletes the given notebook.": [
 		"Smaže vybraný zápisník."
@@ -898,6 +913,9 @@
 	"Dropbox Login": [
 		"Dropbox přihlášení"
 	],
+	"Due": [
+		""
+	],
 	"Duplicate": [
 		"Duplikovat"
 	],
@@ -969,6 +987,9 @@
 	],
 	"emphasised text": [
 		"zvýrazněný text"
+	],
+	"Empty trash": [
+		""
 	],
 	"Enable": [
 		"Zapnout"
@@ -1156,6 +1177,9 @@
 	"Fail-safe: Do not wipe out local data when sync target is empty (often the result of a misconfiguration or bug)": [
 		"Zabezpečení proti selhání: Nemazat místní data, pokud je cíl synchronizace prázdný (často v důsledku nesprávné konfigurace nebo chyby)"
 	],
+	"Failed to leave share. Please verify that Joplin is connected to the internet and able to sync.\nError: %s": [
+		""
+	],
 	"Fatal error:": [
 		"Fatální chyba:"
 	],
@@ -1200,9 +1224,6 @@
 	],
 	"Focus title": [
 		"Kurzor v názvu"
-	],
-	"Folders": [
-		"Složky"
 	],
 	"For debugging purpose only: export your profile to an external SD card.": [
 		"Pouze pro účely ladění: exportovat profil na externí SD kartu."
@@ -1272,6 +1293,9 @@
 	"Grant authorisation": [
 		"Udělení povolení"
 	],
+	"Have you authorised the application login in the above URL?": [
+		""
+	],
 	"Header %d": [
 		"Záhlaví %d"
 	],
@@ -1283,6 +1307,9 @@
 	],
 	"Help": [
 		"Nápověda"
+	],
+	"Here's what we do to make plugins safer:": [
+		""
 	],
 	"Hide %s": [
 		"Schovat %s"
@@ -1335,6 +1362,9 @@
 	"Idle": [
 		"Nečinný"
 	],
+	"If you have already authorised, please wait for the application to sync to Joplin Cloud.": [
+		""
+	],
 	"Ignore": [
 		"Ignorovat"
 	],
@@ -1346,6 +1376,18 @@
 	],
 	"Import": [
 		"Importovat"
+	],
+	"Import failed. Make sure a JEX file was selected.\nDetails: %s": [
+		""
+	],
+	"Import from JEX": [
+		""
+	],
+	"Import notes from a JEX (Joplin Export) file.": [
+		""
+	],
+	"Imported successfully!": [
+		""
 	],
 	"Importing from \"%s\" as \"%s\" format. Please wait...": [
 		"Probíhá import z \"%s\" ve formátu \"%s\". Počkejte prosím..."
@@ -1382,6 +1424,9 @@
 	],
 	"In: %s": [
 		"V: %s"
+	],
+	"Incompatible": [
+		""
 	],
 	"Increase indent level": [
 		"Zvýšení úrovně odsazení"
@@ -1461,11 +1506,8 @@
 	"Joplin Cloud": [
 		"Joplin cloud"
 	],
-	"Joplin Cloud email": [
-		"E-mailová adresa Joplin cloudu"
-	],
-	"Joplin Cloud password": [
-		"Heslo Joplin cloudu"
+	"Joplin doesn't recognise the %s extension. Opening this file could be dangerous. What would you like to do?": [
+		""
 	],
 	"Joplin Export Directory": [
 		"Složka pro export"
@@ -1533,6 +1575,9 @@
 	"Later": [
 		"Později"
 	],
+	"Latitude": [
+		""
+	],
 	"Layout": [
 		"Rozložení"
 	],
@@ -1553,6 +1598,9 @@
 	],
 	"Light": [
 		"Světlý"
+	],
+	"Like any software you install, plugins can potentially cause security issues or data loss.": [
+		""
 	],
 	"Lines": [
 		"Řádky"
@@ -1592,12 +1640,6 @@
 	"Log": [
 		"Log"
 	],
-	"Login": [
-		"Přihlášení"
-	],
-	"Login below.": [
-		"Přihlaste se níže."
-	],
 	"Login with Dropbox": [
 		"Přihlášení Dropbox"
 	],
@@ -1608,6 +1650,9 @@
 		"Odhlásit se"
 	],
 	"Logs, profiles, sync status": [
+		""
+	],
+	"Longitude": [
 		""
 	],
 	"Make a donation": [
@@ -1700,6 +1745,9 @@
 	"More than one item match \"%s\". Please narrow down your query.": [
 		"Výrazu \"%s\" odpovídá více než jedna položka, upřesněte prosím hledaný text."
 	],
+	"Most plugins have source code available for review on the plugin website.": [
+		""
+	],
 	"Move %d notes to notebook \"%s\"?": [
 		"Přesunout poznámky %d do zápisníku \"%s\"?"
 	],
@@ -1722,6 +1770,9 @@
 		"N"
 	],
 	"Never resize": [
+		""
+	],
+	"New": [
 		""
 	],
 	"New note": [
@@ -1771,6 +1822,9 @@
 	],
 	"No active notebook.": [
 		"Není vybrán žádný zápisník."
+	],
+	"No incoming shares": [
+		""
 	],
 	"No item with ID %s": [
 		"Nenalezena položka s ID %s"
@@ -1949,9 +2003,6 @@
 	"Options": [
 		"Nastavení"
 	],
-	"Or create an account.": [
-		"Nebo si vytvořte účet."
-	],
 	"Ordered list": [
 		"Seznam objednávek"
 	],
@@ -2033,20 +2084,26 @@
 	"Please specify the notebook where the notes should be imported to.": [
 		"Prosím specifikujte sešit, do kterého mají být poznámky importovány."
 	],
-	"Please upgrade Joplin to use this plugin": [
-		"Pro použití tohoto rozšíření prosím aktualizujte Joplin"
-	],
 	"Please wait for all attachments to be downloaded and decrypted. You may also switch to %s to edit the note.": [
 		"Počkejte prosím na stažení a dešifrování všech příloh. Můžete také přepnout na %s a poznámku upravit."
 	],
 	"Please wait...": [
 		"Počkejte prosím..."
 	],
+	"Plugin repository failed to load": [
+		""
+	],
 	"Plugin tools": [
 		"Nástroje rozšíření"
 	],
+	"Plugin WebView debugging": [
+		""
+	],
 	"Plugins": [
 		"Rozšíření"
+	],
+	"Plugins extend Joplin with features that are not present by default. Plugins can extend Joplin's editor, viewer, and more.": [
+		""
 	],
 	"Portrait": [
 		"Na výšku"
@@ -2107,6 +2164,9 @@
 	],
 	"Process user deletions": [
 		"Zpracování odstranění uživatelů"
+	],
+	"Processing": [
+		""
 	],
 	"Profile": [
 		"Profil"
@@ -2224,6 +2284,12 @@
 	],
 	"Replace: ": [
 		"Nahradit: "
+	],
+	"Report an issue": [
+		""
+	],
+	"Report fraudulent plugin": [
+		""
 	],
 	"Reset application layout": [
 		"Obnovit rozložení aplikace"
@@ -2480,11 +2546,17 @@
 	"Sorts the item by <field> (eg. title, updated_time, created_time).": [
 		"Řadit položky podle <pole> (např. title, updated_time, created_time)."
 	],
+	"Source": [
+		"Zdroj"
+	],
 	"Source format: %s": [
 		"Zdrojový formát: %s"
 	],
 	"Source: ": [
 		"Zdroj: "
+	],
+	"Spacer": [
+		""
 	],
 	"Specify the port that should be used by the API server. If not set, a default will be used.": [
 		"Určete port, který by měl server API používat. Pokud není nastavena, použije se výchozí."
@@ -2660,6 +2732,9 @@
 	"Take photo": [
 		"Přiložit foto"
 	],
+	"Task \"%s\" failed with error: %s": [
+		""
+	],
 	"Task list": [
 		"Seznam úkolů"
 	],
@@ -2671,9 +2746,6 @@
 	],
 	"Text editor command": [
 		"Textový editor"
-	],
-	"Thank you! Your Joplin Cloud account is now setup and ready to use.": [
-		"Děkujeme! Váš účet Joplin Cloud je nyní nastaven a připraven k použití."
 	],
 	"The active profile cannot be deleted. Switch to a different profile and try again.": [
 		"Aktivní profil nelze odstranit. Přepněte na jiný profil a zkuste to znovu."
@@ -2792,9 +2864,6 @@
 	"There are unsaved changes.": [
 		"Existují neuložené změny."
 	],
-	"There is currently no notebook. Create one by clicking on \"New notebook\".": [
-		"Nemáte žádný zápisník. Nový vytvoříte klepnutím na \"Nový zápisník\"."
-	],
 	"There is no data to export.": [
 		"Nic k exportování."
 	],
@@ -2804,8 +2873,8 @@
 	"There was an error downloading this attachment:": [
 		"Při stahování této přílohy došlo k chybě:"
 	],
-	"There was an error setting up your Joplin Cloud account. Please verify your email and password and try again. Error was:\n\n%s": [
-		"Při nastavování vašeho účtu Joplin Cloud došlo k chybě. Ověřte prosím svůj e-mail a heslo a zkuste to znovu. Chyba:\n\n%s"
+	"These items failed to sync, but have been marked as \"ignored\". They won't cause the sync warning to appear, but still aren't synced. To unignore, click \"retry\".": [
+		""
 	],
 	"These items will remain on the device but will not be uploaded to the sync target. In order to find these items, either search for the title or the ID (which is displayed in brackets above).": [
 		"Tyto položky zůstanou na tomto zařízení, ale nebudou uploadovány na cíl synchronizace. Pro přístup k těmto souborům hledejte jejich název nebo ID (v hranatých závorkách)."
@@ -2814,6 +2883,9 @@
 		"Tyto doplňky vylepšují vykreslovací modul Markdown o další funkce. Upozorňujeme, že i když tyto funkce mohou být užitečné, nejedná se o standardní Markdown, a proto většina z nich bude fungovat pouze v Joplinu. Některé z nich jsou navíc *nekompatibilní* s editorem WYSIWYG. Pokud v tomto editoru otevřete poznámku, která používá jeden z těchto pluginů, ztratíte formátování pluginu. Níže je uvedeno, které doplňky jsou nebo nejsou kompatibilní s editorem WYSIWYG."
 	],
 	"This allows another user to share a notebook with you, and you can then both collaborate on it. It does not however allow you to share a notebook with someone else, unless you have the feature \"%s\".": [
+		""
+	],
+	"This attachment does not have OCR data (Status: %s)": [
 		""
 	],
 	"This attachment is not downloaded or not decrypted yet": [
@@ -2840,17 +2912,26 @@
 	"This note has no history": [
 		"Tato poznámka nemá historii"
 	],
+	"This plugin doesn't support %s.": [
+		""
+	],
 	"This Rich Text editor has a number of limitations and it is recommended to be aware of them before using it.": [
 		"Tento editor formátovaného textu má řadu omezení a při jeho používání doporučujeme mít se na pozoru."
 	],
 	"This service allows the browser extension to communicate with Joplin. When enabling it your firewall may ask you to give permission to Joplin to listen to a particular port.": [
 		"Tato služba umožňuje rozšíření prohlížeče o komunikaci s Joplin. Pokud jej povolíte, může vás firewall požádat, abyste Joplin dali svolení naslouchat na určitém portu."
 	],
+	"This subfolder of the trash has no notes.": [
+		""
+	],
 	"This will allow Joplin to run in the background. It is recommended to enable this setting so that your notes are constantly being synchronised, thus reducing the number of conflicts.": [
 		"Toto umožní Joplin běžet na pozadí. Doporučujeme toto nastavení povolit tak, aby se vaše poznámky neustále synchronizovaly, čímž se sníží počet konfliktů."
 	],
 	"This will open a new screen. Save your current changes?": [
 		"Toto otevře nové okno. Chcete uložit současné změny?"
+	],
+	"This will permanently delete all items in the trash. Continue?": [
+		""
 	],
 	"This will remove the notebook from your collection and you will no longer have access to its content. Do you wish to continue?": [
 		"Tím sešit odstraní z vaší sbírky a vy již nebudete mít přístup k jeho obsahu. Chcete pokračovat?"
@@ -2948,6 +3029,9 @@
 	"Total: %d/%d": [
 		"Celkem: %d/%d"
 	],
+	"Trash": [
+		""
+	],
 	"Try again": [
 		"Zkusit znovu"
 	],
@@ -2970,9 +3054,6 @@
 		"Typ: %s."
 	],
 	"Unable to edit resource of type %s": [
-		""
-	],
-	"Unable to export or share data. Reason: %s": [
 		""
 	],
 	"Unable to share log data. Reason: %s": [
@@ -3101,6 +3182,9 @@
 	"View": [
 		"Zobrazit"
 	],
+	"View OCR text": [
+		""
+	],
 	"View on map": [
 		"Zobrazit na map+"
 	],
@@ -3124,6 +3208,12 @@
 	],
 	"Warning: not all resources shown for performance reasons (limit: %s).": [
 		"Upozornění: nejsou zobrazeny všechny prostředky z důvodů výkonu (limit: %s)."
+	],
+	"We have a system for reporting and removing problematic plugins.": [
+		""
+	],
+	"We mark plugins developed by trusted Joplin community members as \"recommended\".": [
+		""
 	],
 	"Web Clipper": [
 		"Web Clipper"
@@ -3176,6 +3266,9 @@
 	"You are about to attach a large image (%dx%d pixels). Would you like to resize it down to %d pixels before attaching it?": [
 		"Chystáte se připojit velký obrázek (%dx%d pixelů). Chcete jej před připojením zmenšit na %d pixelů?"
 	],
+	"You are logged in into Joplin Cloud, you can leave this screen now.": [
+		""
+	],
 	"You currently have no notebooks.": [
 		"Momentálně nemáte žádné zápisníky."
 	],
@@ -3187,6 +3280,9 @@
 	],
 	"You may use the tool below to re-encrypt your data, for example if you know that some of your notes are encrypted with an obsolete encryption method.": [
 		"Níže uvedený nástroj můžete použít k opětovnému zašifrování dat, například pokud víte, že některé vaše poznámky jsou šifrovány zastaralou metodou šifrování."
+	],
+	"Your account doesn't have access to this feature": [
+		""
 	],
 	"Your choice: ": [
 		"Vaše volba: "

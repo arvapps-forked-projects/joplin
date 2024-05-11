@@ -212,6 +212,8 @@ command | 16
 
 Gets all notes
 
+By default, this call will return the all notes **except** the notes in the trash folder and any conflict note. To include these too, you can specify `include_deleted=1` and `include_conflicts=1` as query parameters.
+
 ### GET /notes/:id
 
 Gets note with ID :id
@@ -266,6 +268,8 @@ Sets the properties of the note with ID :id
 
 Deletes the note with ID :id
 
+By default, the note will be moved **to the trash**. To permanently delete it, add the query parameter `permanent=1`
+
 ## Folders
 
 This is actually a notebook. Internally notebooks are called "folders".
@@ -315,6 +319,8 @@ Sets the properties of the folder with ID :id
 ### DELETE /folders/:id
 
 Deletes the folder with ID :id
+
+By default, the folder will be moved **to the trash**. To permanently delete it, add the query parameter `permanent=1`
 
 ## Resources
 

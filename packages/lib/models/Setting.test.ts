@@ -6,6 +6,7 @@ import { defaultProfileConfig } from '../services/profileConfig/types';
 import { createNewProfile, saveProfileConfig } from '../services/profileConfig';
 import initProfile from '../services/profileConfig/initProfile';
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any -- Old code before rule was applied
 async function loadSettingsFromFile(): Promise<any> {
 	return JSON.parse(await readFile(Setting.settingFilePath, 'utf8'));
 }
@@ -64,14 +65,19 @@ describe('models/Setting', () => {
 		await expectThrow(async () => Setting.value('itsgone'), 'unknown_key');
 	}));
 
-	it('should allow registering new settings dynamically', (async () => {
+	it.each([
+		SettingStorage.Database, SettingStorage.File,
+	])('should allow registering new settings dynamically (storage: %d)', (async (storage) => {
 		await expectThrow(async () => Setting.setValue('myCustom', '123'), 'unknown_key');
 
 		await Setting.registerSetting('myCustom', {
 			public: true,
 			value: 'default',
 			type: Setting.TYPE_STRING,
+			storage,
 		});
+
+		expect(Setting.value('myCustom')).toBe('default');
 
 		await expectNotThrow(async () => Setting.setValue('myCustom', '123'));
 
@@ -327,7 +333,7 @@ describe('models/Setting', () => {
 
 		expect((await Setting.loadOne('locale')).value).toBe('fr_FR');
 		expect((await Setting.loadOne('theme')).value).toBe(Setting.THEME_DARK);
-		expect((await Setting.loadOne('sync.target')).value).toBe(undefined);
+		expect((await Setting.loadOne('sync.target'))).toBe(null);
 	});
 
 	it('should save sub-profile settings', async () => {
@@ -404,6 +410,20 @@ describe('models/Setting', () => {
 		});
 
 		expect(Setting.value('myCustom')).toBe('');
+	});
+
+	test('should not fail Sqlite UNIQUE constraint when re-registering saved settings', async () => {
+		// Re-registering a saved database setting previously caused issues with saving.
+		for (let i = 0; i < 2; i++) {
+			await Setting.registerSetting('myCustom', {
+				public: true,
+				value: `${i}`,
+				type: Setting.TYPE_STRING,
+				storage: SettingStorage.Database,
+			});
+			Setting.setValue('myCustom', 'test');
+			await Setting.saveAll();
+		}
 	});
 
 });
